@@ -1,7 +1,7 @@
 import axios from "axios";
 
 class AppConfig {
-  private prefix = "http://localhost:4000/api/";
+  private prefix = process.env.REACT_APP_BACKEND_URL + "/api/";
   public getCSRFToken = `${this.prefix}csrf-token`;
   public addMetadata = `${this.prefix}fetch-metadata`;
   
