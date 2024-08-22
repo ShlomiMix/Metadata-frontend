@@ -6,7 +6,7 @@ class UrlMetadataService {
   public async addMetadata(urls: string[]): Promise<UrlMetadataModel[]> {
     const options  = await appConfig.getAxiosOptions();  
     console.log({urls:urls});
-     
+    console.log({options:options});
     const response = await axios.post<UrlMetadataModel[]>(
       appConfig.addMetadata,
       urls,

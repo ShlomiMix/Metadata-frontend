@@ -15,6 +15,8 @@ class AppConfig {
 
   public async getAxiosOptions() {
     const csrfToken = await this.fetchCsrfToken();
+    console.log({csrfToken:csrfToken});
+    
     return {
       withCredentials: true,
       headers: {
