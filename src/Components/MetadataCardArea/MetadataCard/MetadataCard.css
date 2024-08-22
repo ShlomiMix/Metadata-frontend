@@ -1,0 +1,21 @@
+.MetadataCard {
+	height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.MetadataCard  span {
+    font-weight:bolder;
+}
+
+.MetadataCard  img{
+	height: 100px;
+    width: auto;
+  
+}
